@@ -1,0 +1,161 @@
+:root{
+    --primary-Color :  #10375C;
+    --secondary-Color : #FF5722;
+    --Hero-OrangeColor : #DD2C00;
+    --select-bg-Color : #0D2C4A;
+}
+
+
+/* Fonts Family */
+.text-Family{
+    font-family: 'Lato', sans-serif;
+}
+
+.titleFamily{
+    font-family: 'Lora', serif;
+}
+
+.logoFamily{
+    font-family: 'Playfair Display', serif;
+}
+
+/* Color */
+.primary-Color{
+    color: var(--primary-Color) !important;
+}
+
+.secondary-Color {
+    color: var(--secondary-Color) !important;
+}
+
+.secondary-bg-color{
+    background-color: var(--secondary-Color);
+}
+
+.orangeColor {
+    color: var(--Hero-OrangeColor);
+}
+
+.primary-bgColor{
+    background-color: var(--primary-Color);
+}
+
+.selectBgColor{
+    background-color: var(--select-bg-Color);
+}
+
+/* Active nav-Link */
+.active{
+    color: var(--secondary-Color) !important;
+    font-size: 1.1rem !important;
+}
+
+/* Custom nav-link Hover */
+.navbar-nav .nav-link:hover {
+    color: var(--secondary-Color) !important;
+}
+
+/* Hero */
+.line{
+    width: 8vw;
+    height: 2px;
+    border-radius: 50px;
+}
+
+.heroCarousel{
+    width: 70%;
+}
+
+.formBlock{
+    top: 10%;
+}
+
+.formContainer .container{
+    right: 3vw;
+}
+
+.formfocus:focus{
+    outline: none;
+}
+
+.custome-select{
+    appearance: none;
+}
+
+.select-Icon{
+    right: 5%;
+    top: 40%;
+}
+.carouselBtn{
+    width: 20px !important;
+}
+.carousel-indicators .active{
+    background-color: var(--secondary-Color) !important;
+    width: 40px !important;
+}
+
+.prev-btn{
+    height: 150px !important;
+    top: 80% !important;
+    left: 1vw !important;
+}
+
+.next-btn{
+    height: 150px !important;
+    width: 30px !important;
+    top: 80% !important;
+    left: 10vw !important;
+}
+
+.swIcon{
+    font-size: 60px !important;
+}
+
+.prev-btn i{
+    color: white !important;
+}
+
+.prev-btn i:hover{
+    color: var(--secondary-Color) !important;
+}
+.prev-btn i:focus{
+    color: var(--secondary-Color) !important;
+}
+.next-btn i{
+    color: white !important;
+}
+
+.next-btn  i:hover{
+    color: var(--secondary-Color) !important;
+}
+.next-btn  i:focus{
+    color: var(--secondary-Color) !important;
+}
+
+/* Our Space Section */
+.spaces img{
+    width: 25vw;
+    height: 80%;
+}
+
+.checkBtn{
+    width: 80px;
+    height: 80px;
+    background-color: var(--secondary-Color);
+    top: 70.5%;
+    left: 0;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.checkBtn:hover {
+    width: 200px;
+}
+
+.checkBtn p{
+    transition: 0.5s ease-in-out !important;
+}
+
+.checkBtn:hover p{
+    display: block !important;
+}

@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WorkHub</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Bootstrap CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Lora:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <!-- Swiper CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md p-md-3">
+        <div class="container">
+          <a class="navbar-brand logoFamily fw-bold primary-Color fs-3" href="#">WorkHub.</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav text-Family fw-bold gap-4">
+              <li class="nav-item">
+                <a class="nav-link primary-Color active" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link primary-Color" href="#">Workspace</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link primary-Color" href="#">Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link primary-Color" href="#">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link primary-Color" href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section class="hero mt-5">
+        <div class="container">
+            <div class="intro d-flex align-items-center gap-3">
+                <p class="fw-medium fs-5">Introducing</p>
+                <div class="line bg-dark mb-2"></div>
+            </div>
+            <div class="hero-desc row gap-5 ">
+                <h1 class="title titleFamily display-3 col-8 fw-semibold primary-Color"><span class="orangeColor">Revolutionary</span> co-working space to realize your innovation</h1>
+                <p class="desc col-3 mt-4">In WorkHub, we spearhead new initiatives and provide mentorship to a new startup, and help grow their opportunities in key local, regional and global markets</p>
+            </div>
+        </div>
+        <div class="formContainer pb-5">
+            <div class="sliderContainer d-flex  position-relative justify-content-end">
+                <div class="formBlock z-1 container position-absolute">
+                    <div class="form primary-bgColor col-4 p-5">
+                        <h2 class="titleFamily text-light mb-4">Find your Space now</h2>
+                        <div class="selectContainer">
+                            <div class="location d-flex flex-column mb-2 position-relative">
+                                <label for="location" class="selectBgColor px-3 pt-2 text-secondary fw-semibold">Location</label>
+                                <i class="fa-solid fa-chevron-down position-absolute text-light select-Icon fs-6"></i>
+                                <select name="location" id="location" class="custome-select formfocus selectBgColor text-light border-0 px-3 pb-2">
+                                    <option value="Tangier">Tangier, Morocco</option>
+                                    <option value="Rabat">Rabat, Morocco</option>
+                                    <option value="Fes">Fes, Morocco</option>
+                                </select>
+                            </div>
+                            <div class="type d-flex flex-column mb-2 position-relative">
+                                <label for="type" class="selectBgColor px-3 pt-2 text-secondary fw-semibold">Type</label>
+                                <i class="fa-solid fa-chevron-down position-absolute text-light select-Icon fs-6"></i>
+                                <select name="type" id="type" class="custome-select formfocus selectBgColor text-light border-0 px-3 pb-2">
+                                    <option value="Tangier">Tangier</option>
+                                    <option value="Rabat">Rabat, Morocco</option>
+                                    <option value="Fes">Fes, Morocco</option>
+                                </select>
+                            </div>
+                            <div class="Date d-flex flex-column mb-2 position-relative">
+                                <label for="Date" class="selectBgColor px-3 pt-2 text-secondary fw-semibold">Date</label>
+                                <i class="fa-solid fa-chevron-down position-absolute text-light select-Icon fs-6"></i>
+                                <select name="Date" id="Date" class="custome-select formfocus selectBgColor text-light border-0 px-3 pb-2">
+                                    <option value="Tangier">27 Dec 2023</option>
+                                    <option value="Rabat">Rabat, Morocco</option>
+                                    <option value="Fes">Fes, Morocco</option>
+                                </select>
+                            </div>
+                            <button class="w-100 border-0 secondary-bg-color text-light fw-semibold p-2 mt-2">FIND MY SPACE</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="carouselExampleIndicators" class="carousel slide heroCarousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active carouselBtn" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" class="carouselBtn"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" class="carouselBtn"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4" class="carouselBtn"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./img/Slide2.avif" class="d-block w-100" alt="Slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/Slided1.avif" class="d-block w-100" alt="Slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/copernico-yfmU1uL_mp8-unsplash.jpg" class="d-block w-100" alt="Slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/slide4.avif" class="d-block w-100" alt="Slide">
+                      </div>
+                    </div>
+                    <button class="prev-btn carousel-control-prev position-absolute" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+                      <i class="bi bi-arrow-left-circle text-secondary swIcon fw-bold"></i>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="next-btn carousel-control-next position-absolute" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+                      <i class="bi bi-arrow-right-circle text-secondary swIcon fw-bold"></i>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+      </section>
+      <section class="OurSpace mt-5">
+        <div class="container">
+            <div class="textArea row mb-5">
+                <h1 class="title primary-Color titleFamily fw-bold col-5">Our Spaces</h1>
+                <p class="col-5 text-secondary fw-normal">Our space is designed to give you a different experience when working with your team or personally</p>
+            </div>
+            <div class="spaces row gap-5">
+                <div class="teamSpace col d-flex flex-column align-items-center position-relative">
+                    <img src="./img/sw1.avif" alt="sw1">
+                    <p class="fs-4 fw-bold text-Family mt-3">Working With team</p>
+                    <div class="checkBtn d-flex position-absolute align-items-center justify-content-center gap-3">
+                        <p class="d-none text-light fw-bold fs-4 pt-3">Check</p>
+                        <i class="bi bi-chevron-right text-light fs-4"></i>
+                    </div>
+                </div>
+                <div class="teamSpace col d-flex flex-column align-items-center position-relative">
+                    <img src="./img/sw2.avif" alt="sw2">
+                    <p class="fs-4 fw-bold text-Family mt-3">Private Space</p>
+                    <div class="checkBtn d-flex position-absolute align-items-center justify-content-center gap-3">
+                        <p class="d-none text-light fw-bold fs-4 pt-3">Check</p>
+                        <i class="bi bi-chevron-right text-light fs-4"></i>
+                    </div>
+                </div>
+                <div class="teamSpace col d-flex flex-column align-items-center position-relative">
+                    <img src="./img/event2.avif" alt="sw3">
+                    <p class="fs-4 fw-bold text-Family mt-3">Event Space</p>
+                    <div class="checkBtn d-flex position-absolute align-items-center justify-content-center gap-3">
+                        <p class="d-none text-light fw-bold fs-4 pt-3">Check</p>
+                        <i class="bi bi-chevron-right text-light fs-4"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <section class="whyContainer mb-5">
+        <div class="container mx-auto my-0 row">
+            <div class="block1 col">
+                <div class="contentContainer row">
+                    <div class="col-6 d-flex">
+                        <div class="icon">
+                            <i class="fa-solid fa-people-roof fs-2 px-3 pt-2"></i>
+                        </div>
+                        <div class="textContent">
+                            <h1>100+</h1>
+                            <p>Event spaces</p>
+                        </div>
+                    </div>
+                    <div class="col-6 d-flex">
+                        <div class="icon">
+                            <i class="fa-solid fa-people-roof fs-2 px-3 pt-2"></i>
+                        </div>
+                        <div class="textContent">
+                            <h1>100+</h1>
+                            <p>Event spaces</p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <h1>D</h1>
+                    </div>
+                    <div class="col-6">
+                        <h1>D</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="block2 col p-5 primary-bgColor">
+                <div class="d-flex align-items-center gap-3 text-light">
+                    <p class="fw-medium fs-5 text-Family">Why WorkHub</p>
+                    <div class="line bg-light mb-2"></div>
+                </div>
+                <h1 class="titleFamily text-light fw-bold">We revolutionize your workspace</h1>
+                <p class="text-light text-Family fs-5 mt-4">With a decade of insights and expertise, we're decided to reimagine co-working space, designed to help a new startup grow up and realize their ideas so they can give a positive impacts on many people</p>
+            </div>
+        </div>
+      </section>
+  </body>
+    <!-- Bootstrap CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- Fonts Awsome CDN -->
+    <script src="https://kit.fontawesome.com/4938da1e0a.js" crossorigin="anonymous"></script>
+    <!-- Swiper CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <!-- JS -->
+    <script src="./main.js"></script>
+</html>
