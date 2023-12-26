@@ -3,8 +3,8 @@
     --secondary-Color : #FF5722;
     --Hero-OrangeColor : #DD2C00;
     --select-bg-Color : #0D2C4A;
+    --dark-blue : #222831;
 }
-
 
 /* Fonts Family */
 .text-Family{
@@ -42,6 +42,10 @@
 
 .selectBgColor{
     background-color: var(--select-bg-Color);
+}
+
+.dark-blue{
+    color: var(--dark-blue);
 }
 
 /* Active nav-Link */
@@ -158,4 +162,14 @@
 
 .checkBtn:hover p{
     display: block !important;
+}
+
+/* Facilities */
+.facilities ul > li{
+    cursor: pointer;
+}
+
+.facilityActive{
+    background-color: var(--secondary-Color);
+    color: white;
 }
