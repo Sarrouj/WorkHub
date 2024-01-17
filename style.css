@@ -4,6 +4,11 @@
     --Hero-OrangeColor : #DD2C00;
     --select-bg-Color : #0D2C4A;
     --dark-blue : #222831;
+    --footerHeadingColor : #ffffff;
+}
+
+a{
+    text-decoration: none !important;
 }
 
 /* Fonts Family */
@@ -48,6 +53,9 @@
     color: var(--dark-blue);
 }
 
+.footerHeadingColor{
+    color: var(--footerHeadingColor);
+}
 /* Active nav-Link */
 .active{
     color: var(--secondary-Color) !important;
@@ -146,7 +154,7 @@
     width: 80px;
     height: 80px;
     background-color: var(--secondary-Color);
-    top: 70.5%;
+    top: 69%;
     left: 0;
     cursor: pointer;
     transition: .3s ease-in-out;
@@ -172,4 +180,11 @@
 .facilityActive{
     background-color: var(--secondary-Color);
     color: white;
+}
+
+
+/* footer */
+footer .leftSide .pages a{
+    color: white;
+    font-size: 1vw;
 }
